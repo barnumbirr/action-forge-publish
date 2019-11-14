@@ -1,0 +1,18 @@
+---
+name: action-forge-publish
+description: Build and publish module to Puppet Forge
+author: Martin Simon <me@martinsimon.me>
+branding:
+  icon: upload-cloud
+  color: orange
+inputs:
+  FORGE_API_KEY:
+    description: Your Puppet Forge API key.
+    required: true
+  REPOSITORY_URL:
+    description: The Forge repository URL to use.
+    required: true
+    default: https://forgeapi.puppet.com/v3/releases
+runs:
+  using: docker
+  image: Dockerfile
