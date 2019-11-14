@@ -12,7 +12,7 @@ function build() {
 }
 
 function upload() {
-    curl -D- --request 'POST' "$REPOSITORY_URL" \
+    curl -D- --fail --request 'POST' "$REPOSITORY_URL" \
       -F file="@${NAME}".tar.gz \
       -H "Authorization: Bearer $FORGE_API_KEY"
 }
