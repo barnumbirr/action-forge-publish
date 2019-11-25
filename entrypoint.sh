@@ -22,7 +22,9 @@ function build() {
 }
 
 function upload() {
+    set -v
     curl \
+        --fail \
         --silent \
         --max-time 5 \
         --show-error \
@@ -32,10 +34,7 @@ function upload() {
         --header 'Content-Type: multipart/form-data' \
         --header "Authorization: Bearer $FORGE_API_KEY" \
         "$REPOSITORY_URL"
-
-    if [ 0 -eq $? ]; then
-        exit 1
-    fi
+    set +v
 }
 
 build

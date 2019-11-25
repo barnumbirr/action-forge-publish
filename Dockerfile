@@ -6,7 +6,7 @@ LABEL "com.github.actions.icon"="upload-cloud"
 LABEL "com.github.actions.color"="orange"
 
 LABEL "name"="Publish to Puppet Forge"
-LABEL "version"="1.0.0"
+LABEL "version"="1.3.0"
 LABEL "repository"="https://github.com/barnumbirr/action-forge-publish"
 LABEL "maintainer"="Martin Simon <me@martinsimon.me>"
 
