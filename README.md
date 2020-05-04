@@ -25,7 +25,7 @@ jobs:
       with:
         ref: ${{ env.RELEASE_VERSION }}
     - name: Build and publish module
-      uses: barnumbirr/action-forge-publish@v2.1.0
+      uses: barnumbirr/action-forge-publish@v2.2.0
       env:
        FORGE_API_KEY: ${{ secrets.FORGE_API_KEY }}
        REPOSITORY_URL: https://forgeapi.puppet.com/v3/releases
