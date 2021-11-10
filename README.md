@@ -26,7 +26,7 @@ jobs:
       with:
         ref: ${{ steps.vars.outputs.tag }}
     - name: Build and publish module
-      uses: barnumbirr/action-forge-publish@v2.6.1
+      uses: barnumbirr/action-forge-publish@v2.7.0
       env:
        FORGE_API_KEY: ${{ secrets.FORGE_API_KEY }}
        REPOSITORY_URL: https://forgeapi.puppet.com/v3/releases
@@ -48,4 +48,15 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+```
+
+## Buy me a coffee?
+
+If you feel like buying me a coffee (or a beer?), donations are welcome:
+
+```
+BTC : bc1qq04jnuqqavpccfptmddqjkg7cuspy3new4sxq9
+DOGE: DRBkryyau5CMxpBzVmrBAjK6dVdMZSBsuS
+ETH : 0x2238A11856428b72E80D70Be8666729497059d95
+LTC : MQwXsBrArLRHQzwQZAjJPNrxGS1uNDDKX6
 ```
