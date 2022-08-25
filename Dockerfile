@@ -16,6 +16,7 @@ RUN apk add --no-cache \
     jq
 
 ADD entrypoint.sh /entrypoint.sh
+RUN gem install io-console
 RUN chmod +x /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
