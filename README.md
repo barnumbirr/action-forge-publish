@@ -26,7 +26,7 @@ jobs:
       with:
         ref: ${{ steps.vars.outputs.tag }}
     - name: Build and publish module
-      uses: barnumbirr/action-forge-publish@v2.9.2
+      uses: barnumbirr/action-forge-publish@v2.10.0
       env:
        FORGE_API_KEY: ${{ secrets.FORGE_API_KEY }}
        REPOSITORY_URL: https://forgeapi.puppet.com/v3/releases
@@ -35,7 +35,7 @@ jobs:
 ## License:
 
 ```
-Copyright 2019-2022 Martin Simon
+Copyright 2019-2023 Martin Simon
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
