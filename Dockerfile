@@ -1,4 +1,4 @@
-FROM ghcr.io/barnumbirr/alpine-pdk:3.0.0
+FROM ghcr.io/barnumbirr/alpine-pdk:3.1.0
 
 LABEL "com.github.actions.name"="action-forge-publish"
 LABEL "com.github.actions.description"="Build and publish module to Puppet Forge"
@@ -6,9 +6,9 @@ LABEL "com.github.actions.icon"="upload-cloud"
 LABEL "com.github.actions.color"="orange"
 
 LABEL "name"="Publish to Puppet Forge"
-LABEL "version"="2.13.0"
+LABEL "version"="2.14.0"
 LABEL "repository"="https://github.com/barnumbirr/action-forge-publish"
-LABEL "maintainer"="Martin Simon <me@martinsimon.me>"
+LABEL "maintainer"="Martin Simon <martin@simon.tf>"
 
 RUN apk add --no-cache \
     bash \

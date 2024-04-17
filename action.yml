@@ -1,7 +1,7 @@
 ---
 name: action-forge-publish
 description: Build and publish module to Puppet Forge
-author: Martin Simon <me@martinsimon.me>
+author: Martin Simon <martin@simon.tf>
 branding:
   icon: upload-cloud
   color: orange

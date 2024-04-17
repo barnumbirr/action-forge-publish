@@ -22,11 +22,11 @@ jobs:
       id: vars
       run: echo "{tag}=${GITHUB_REF:10}" >> $GITHUB_OUTPUT
     - name: Clone repository
-      uses: actions/checkout@v3.4.0
+      uses: actions/checkout@v4.1.1
       with:
         ref: ${{ steps.vars.outputs.tag }}
     - name: Build and publish module
-      uses: barnumbirr/action-forge-publish@v3.0.0
+      uses: barnumbirr/action-forge-publish@v2.14.0
       env:
        FORGE_API_KEY: ${{ secrets.FORGE_API_KEY }}
        REPOSITORY_URL: https://forgeapi.puppet.com/v3/releases
@@ -35,7 +35,7 @@ jobs:
 ## License:
 
 ```
-Copyright 2019-2023 Martin Simon
+Copyright 2019-2024 Martin Simon
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
