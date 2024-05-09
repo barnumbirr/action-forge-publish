@@ -1,4 +1,4 @@
-FROM ghcr.io/barnumbirr/alpine-pdk:3.1.0
+FROM ghcr.io/barnumbirr/alpine-pdk:3.2.0
 
 LABEL "com.github.actions.name"="action-forge-publish"
 LABEL "com.github.actions.description"="Build and publish module to Puppet Forge"
